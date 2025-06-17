@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'SIART - Sistema de Vigilancia',
-  description: 'Sistema Integral de Análisis y Vigilancia en Tiempo Real',
+  description: 'Sistema Integral de Vigilancia y Monitoreo',
 }
 
 export default function RootLayout({
@@ -16,9 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={inter.className}>
-        {children}
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }
